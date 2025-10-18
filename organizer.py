@@ -1,8 +1,13 @@
 from pathlib import Path
 from typing import Dict, List
 from utils import load_categories, categorize_file, move_file
+import sys
 
-BASE_DIR:Path = Path(__file__).resolve().parent
+if getattr(sys, 'frozen', False):
+    BASE_DIR:Path = Path(sys._MEIPASS)
+else:
+    BASE_DIR:Path = Path(__file__).resolve().parent 
+
 CATEGORIES_FILE:Path = BASE_DIR / "categories.json"
 DOWNLOADS_FOLDER:Path = Path.home() / "Documents" / "Testing"
 
