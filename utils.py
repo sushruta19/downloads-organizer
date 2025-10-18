@@ -1,5 +1,5 @@
 import shutil
-import pathlib from Path
+from pathlib import Path
 import json
 import magic
 from typing import Dict, List, Optional
