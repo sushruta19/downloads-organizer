@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from pathlib import Path
 from typing import Dict, List
 from utils import load_categories, categorize_file, move_file

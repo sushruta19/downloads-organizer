@@ -1,12 +1,49 @@
 {
-  "Documents": [".pdf", ".docx", ".doc", ".txt", ".xlsx", ".xls", ".pptx", ".ppt", ".csv", ".odt", ".rtf", ".md", ".tex"],
-  "Images": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".svg", ".webp", ".heic", ".ico", ".psd", ".ai"],
-  "Videos": [".mp4", ".mkv", ".mov", ".avi", ".flv", ".wmv", ".webm", ".m4v", ".3gp"],
-  "Music": [".mp3", ".wav", ".aac", ".flac", ".ogg", ".m4a"],
-  "Archives": [".zip", ".rar", ".7z", ".tar", ".gz", ".bz2", ".xz", ".iso"],
-  "Executables": [".exe", ".msi", ".bat", ".cmd", ".sh", ".run", ".bin", ".appimage", ".deb", ".rpm"],
-  "Python": [".py", ".ipynb", ".pyc", ".pyo"],
-  "Code": [".cpp", ".c", ".h", ".java", ".js", ".ts", ".html", ".css", ".json", ".xml", ".yaml", ".yml", ".php", ".rb", ".swift"],
-  "Fonts": [".ttf", ".otf", ".woff", ".woff2"],
+  "Documents": [
+    ".pdf", ".docx", ".doc", ".txt", ".xlsx", ".xls", ".pptx", ".ppt",
+    ".csv", ".odt", ".ods", ".odp", ".odg", ".rtf", ".md", ".tex",
+    ".epub", ".pages", ".numbers", ".key", ".log"
+  ],
+  "Images": [
+    ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".svg", ".webp",
+    ".heic", ".ico", ".psd", ".ai", ".indd", ".tga", ".raw", ".jfif"
+  ],
+  "Videos": [
+    ".mp4", ".mkv", ".mov", ".avi", ".flv", ".wmv", ".webm",
+    ".m4v", ".3gp", ".mpeg", ".mpg", ".ogv"
+  ],
+  "Music": [
+    ".mp3", ".wav", ".aac", ".flac", ".ogg", ".m4a", ".aiff",
+    ".amr", ".wma", ".mid"
+  ],
+  "Archives": [
+    ".zip", ".rar", ".7z", ".tar", ".gz", ".bz2", ".xz", ".iso", ".cab",
+    ".lz", ".lzma", ".zst"
+  ],
+  "Executables": [
+    ".exe", ".msi", ".bat", ".cmd", ".sh", ".run", ".bin", ".appimage",
+    ".deb", ".rpm", ".apk", ".jar", ".elf"
+  ],
+  "Python": [
+    ".py", ".ipynb", ".pyc", ".pyo", ".pyw", ".whl", ".pyd"
+  ],
+  "Code": [
+    ".cpp", ".c", ".h", ".hpp", ".java", ".js", ".ts", ".jsx", ".tsx",
+    ".html", ".css", ".scss", ".less", ".json", ".xml", ".yaml",
+    ".yml", ".php", ".rb", ".swift", ".go", ".rs", ".dart", ".lua",
+    ".sql", ".r", ".mat", ".sav", ".dockerfile", ".toml"
+  ],
+  "Fonts": [
+    ".ttf", ".otf", ".woff", ".woff2", ".eot"
+  ],
+  "Design": [
+    ".xd", ".fig", ".sketch", ".blend", ".3ds", ".obj", ".stl"
+  ],
+  "Configs": [
+    ".ini", ".cfg", ".conf", ".env", ".service", ".yaml", ".yml"
+  ],
+  "Scripts": [
+    ".ps1", ".bash", ".zsh", ".ksh", ".fish", ".pl", ".vbs"
+  ],
   "Others": []
 }

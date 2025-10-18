@@ -26,16 +26,38 @@ def categorize_file(file_path: Path, categories: Dict[str, List[str]]) -> str:
     
     mime = detect_file_type(file_path)
     if mime:
+        mime = mime.lower()
+        # PDFs and office docs
+        if "pdf" in mime or "postscript" in mime:
+            return "Documents"
+        if "officedocument" in mime or "spreadsheet" in mime or "presentation" in mime:
+            return "Documents"
+        if "text" in mime or "plain" in mime or "rtf" in mime:
+            return "Documents"
+
+        # Images
         if "image" in mime:
             return "Images"
-        elif "video" in mime:
+
+        # Videos
+        if "video" in mime:
             return "Videos"
-        elif "audio" in mime:
+
+        # Audio
+        if "audio" in mime:
             return "Music"
-        elif "text" in mime:
-            return "Documents"
-        elif "application/x-executable" in mime:
+
+        # Archives
+        if "zip" in mime or "compressed" in mime or "archive" in mime:
+            return "Archives"
+
+        # Executables / binaries
+        if "executable" in mime or "binary" in mime:
             return "Executables"
+
+        # Scripts
+        if "shellscript" in mime or "python" in mime or "perl" in mime:
+            return "Scripts"
     return "Others"
 
 
