@@ -15,8 +15,11 @@ def organize_downloads() -> None:
         if item.is_file():
             category:str = categorize_file(item, FILE_CATEGORIES)
             dest_folder:Path = DOWNLOADS_FOLDER / category
-            move_file(item, dest_folder)
-            count += 1
+            try:    
+                move_file(item, dest_folder)
+                count += 1
+            except Exception as e:
+                print(f"Could not move {item.name}: {e}")
     print(f"Organization complete! {count} files moved.")
 
 if __name__ == "__main__":
